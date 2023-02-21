@@ -1,0 +1,138 @@
+.chatWindow {
+  height: 500px;
+  width: 316px;
+  border: 1px solid #000000;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.button {
+  background-color: white;
+  border: 1px solid #000000;
+  cursor: pointer;
+}
+
+#optionButton {
+  margin-bottom: 3px;
+}
+
+#backButton {
+  margin-bottom: 3px;
+  margin-left: 181px;
+}
+
+#closeOption {
+  margin-left: 100px;
+  font-weight: 300;
+  font-size: 18px;
+  user-select: none;
+  background: none;
+  border: none;
+}
+
+#closeLogin {
+  margin-left: 90px;
+  font-weight: 300;
+  font-size: 18px;
+  user-select: none;
+  background: none;
+  border: none;
+}
+
+#closeCode {
+  margin-left: 75px;
+  font-weight: 300;
+  font-size: 18px;
+  user-select: none;
+  background: none;
+  border: none;
+}
+
+#confirmName {
+  margin-top: 5px;
+}
+
+#confirmEmail {
+  margin-top: 5px;
+}
+
+#confirmCode {
+  margin-top: 5px;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+}
+
+#sendMessage {
+  margin-top: 3px;
+}
+
+#messageInput {
+  width: 226px;
+}
+
+#myMessage {
+  background-color: rgba(127, 187, 255, 0.199);
+  border-radius: 3px;
+  padding: 2px;
+  height: auto;
+  width: 115px;
+  margin-left: 175px;
+  margin-top: 5px;
+}
+
+#myMessageTime {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#someoneMessage {
+  background-color: rgb(127, 214, 255);
+  border-radius: 3px;
+  padding: 2px;
+  height: auto;
+  width: 115px;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.messageLoaded {
+  width: 100px;
+  height: auto;
+  margin-left: 65px;
+}
+
+.popUp {
+  background: rgba(102, 102, 102, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.popUpWindow {
+  margin-top: 50px;
+  margin-left: 50px;
+  width: 200px;
+  height: 350px;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  padding: 5px;
+}
+
+.popUpHeader {
+  display: flex;
+  flex-direction: row;
+}
+
+#loginPopUp {
+  display: none;
+}
+
+#codePopUp {
+  display: none;
+}

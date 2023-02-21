@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="chatStyle.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="mainWindow">
+      <button id="optionsButton" class="button">Настройки</button>
+      <button id="backButton" class="button">Выйти</button>
+      <div class="chatWindow">
+        <template class="myMessageTemplate">
+          <div id="myMessage" class="message">
+            <span id="myMessageText"></span>
+            <span id="myMessageTime"></span>
+          </div>
+        </template>
+        <template class="someoneMessageTemplate">
+          <div id="someoneMessage" class="message">
+            <span id="someoneMessageText"></span>
+            <span id="messageTime"></span>
+          </div>
+        </template>
+      </div>
+      <form class="inputForm">
+        <input id="messageInput" placeholder="сообщение.." />
+        <button id="sendMessage" class="button">Отправить</button>
+      </form>
+    </div>
+    <div id="optionPopUp" class="popUp">
+      <div class="popUpWindow">
+        <div class="popUpHeader">
+          <p class="optionName">Настройки</p>
+          <button id="closeOption" class="button">&times</button>
+        </div>
+        <p class="chatNameOption">Имя в чате:</p>
+        <input class="nameInput" />
+        <button id="confirmName" class="button">Подтвердить</button>
+      </div>
+    </div>
+    <div id="loginPopUp" class="popUp">
+      <div class="popUpWindow">
+        <div class="popUpHeader">
+          <p class="loginName">Авторизация</p>
+          <button id="closeLogin" class="button">&times</button>
+        </div>
+        <p class="loginEmail">Почта:</p>
+        <input class="emailInput" />
+        <button id="confirmEmail" class="button">Получить код</button>
+      </div>
+    </div>
+    <div id="codePopUp" class="popUp">
+      <div class="popUpWindow">
+        <div class="popUpHeader">
+          <p class="codeName">Подтверждение</p>
+          <button id="closeCode" class="button">&times</button>
+        </div>
+        <p class="codeText">Код:</p>
+        <input class="codeInput" />
+        <button id="confirmCode" class="button">Войти</button>
+      </div>
+    </div>
+    <script src="http://cdn.date-fns.org/v1.9.0/date_fns.min.js"></script>
+    <script src="chatScript.js" type="module"></script>
+  </body>
+</html>
